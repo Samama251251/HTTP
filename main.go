@@ -50,4 +50,5 @@ func handleConnection(conn net.Conn) {
 		}
 	}
 	parser.ParseRequestLine(string(request))
+	parser.ParseHeaders(string(request))
 }
