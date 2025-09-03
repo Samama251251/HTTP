@@ -49,8 +49,5 @@ func handleConnection(conn net.Conn) {
 			return
 		}
 	}
-
-	// Now you can parse request
-	parser.ParseRequest(string(request))
-
+	parser.ParseRequestLine(string(request))
 }
